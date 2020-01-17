@@ -50,7 +50,7 @@ jobs:
           # ln -s /mnt/openwrt/staging_dir ./staging_dir
 
           df -h
-		  
+
 	  - name: Costom files clone
         run: |
           cd package
