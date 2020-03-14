@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: OpenWrt-CI-2020.2.11
+name: OpenWrt-CI-2020.03.14
 
 on:
   # schedule:
@@ -57,7 +57,7 @@ jobs:
           mkdir openwrt-packages
           cd openwrt-packages
           # git clone https://github.com/Ameykyl/luci-app-koolproxyR.git
-          git clone https://github.com/tzxiaozhen88/luci-app-koolproxyR.git
+          # git clone https://github.com/tzxiaozhen88/luci-app-koolproxyR.git
           git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 
       - name: Update feeds
@@ -137,10 +137,10 @@ jobs:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           CONFIG_PACKAGE_luci-app-adbyby-plus=y
-          CONFIG_PACKAGE_luci-app-koolproxyR=y
+          # CONFIG_PACKAGE_luci-app-koolproxyR=y
           CONFIG_PACKAGE_luci-app-adguardhome=y
           CONFIG_PACKAGE_luci-app-smartdns=y
-          CONFIG_PACKAGE_luci-app-minidlna=y
+          # CONFIG_PACKAGE_luci-app-minidlna=y
           CONFIG_PACKAGE_luci-app-aria2=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
